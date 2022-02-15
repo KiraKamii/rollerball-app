@@ -92,7 +92,10 @@ public class RollerGame {
         for (Wall wall : mWalls) {
             wall.draw(canvas);
         }
+        mPaint.setColor(Color.GREEN);
+        canvas.drawRect(0, 1700, 2000, 5000, mPaint);
 
+        mPaint.setColor(Color.BLUE);
         // User win?
         if (mBall.getBottom() >= mSurfaceHeight) {
             String text = "You won!";
@@ -105,12 +108,18 @@ public class RollerGame {
         // User lose?
         for (Wall wall : mWalls){
         if (mBall.intersects(wall)) {
-            String text = "You lose! Tap to retry";
+            String text = "You lose!";
             Rect textBounds = new Rect();
             mPaint.getTextBounds(text, 0, text.length(), textBounds);
             canvas.drawText(text, mSurfaceWidth / 2f - textBounds.exactCenterX(),
                     mSurfaceHeight / 2f - textBounds.exactCenterY(), mPaint);
-            }
+            text = "Tap or Shake to retry";
+            mPaint.getTextBounds(text, 0, text.length(), textBounds);
+            canvas.drawText(text, mSurfaceWidth / 2f - textBounds.exactCenterX(),
+                    mSurfaceHeight / 2f - textBounds.exactCenterY()+120, mPaint);
+
+
+        }
         }
     }
 }

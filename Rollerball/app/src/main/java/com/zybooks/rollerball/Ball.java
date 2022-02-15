@@ -1,6 +1,7 @@
 package com.zybooks.rollerball;
 
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.PointF;
@@ -27,7 +28,7 @@ public class Ball {
 
         // Ball color
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setColor(0xffaaaaff);
+        mPaint.setColor(Color.GREEN);
     }
 
     public void setCenter(int x, int y) {

@@ -12,13 +12,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         android:text="Rollerball Game"
+        android:textColor="@color/blue"
         android:textSize="40dp"/>
 
     <Button
         android:id="@+id/start_button"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Start Game" />
+        android:background="@color/blue"
+        android:text="Start Game"
+        android:textColor="@color/green"/>
 
 </RelativeLayout>

@@ -30,7 +30,7 @@ public class RollerGame {
         // For drawing text
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setTextSize(90);
-        mPaint.setColor(Color.RED);
+        mPaint.setColor(Color.BLUE);
 
         mBall = new Ball(mSurfaceWidth, mSurfaceHeight);
 

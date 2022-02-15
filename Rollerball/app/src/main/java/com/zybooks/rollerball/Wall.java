@@ -1,6 +1,7 @@
 package com.zybooks.rollerball;
 
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 
@@ -32,7 +33,7 @@ public class Wall {
 
         // Wall color
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setColor(0xffffaaff);
+        mPaint.setColor(Color.RED);
     }
 
     public Rect getRect() {
